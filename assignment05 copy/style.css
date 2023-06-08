@@ -1,0 +1,95 @@
+body{
+	background-color:whitesmoke;
+	margin:0;
+}
+
+h1{
+	margin-top:0;
+}
+
+
+	#container{
+	width:1100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #c3dadb;
+	}
+
+		#header{
+			background-image: url('images/new_girl_header.jpeg');
+			height: 500px;
+			background-size: cover;
+			background-position: top;
+			color: #fdd023;
+			font-family: sans-serif;
+			font-size: 3.5em;
+			text-align: center;
+			line-height: 500px;
+			text-shadow: 5px 5px 0px #1b397b;
+		}
+		#footer {
+			background-color: #1b397b;
+			color: #fff;
+			text-align: center;
+			font-size:1em;
+			line-height:50px;
+			height:50px;
+		}
+
+		#footer p{
+			margin:0;
+		}
+
+	#nav-wrapper {
+		background-color: #1b397b;;
+	}
+
+	
+	#nav {
+		width: 1100px;
+		margin-left: auto;
+		margin-right: auto;	
+		font-size:0;
+	}
+
+
+	#nav a {
+		text-decoration: none;
+		background-color: #1b397b;
+		width: 550px;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+		text-align: center;	
+		color: white;
+		font-size:21px;
+	}
+	
+	#nav a:hover {
+	background-color: black;
+	color: #fdd023;
+}
+
+#nav a.active {background-color:#fdd023;color:#1b397b;}
+
+	.floatleft{
+		float:left;
+	}
+
+	.floatright{
+		float:right;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+	.portrait {
+		width:100%;
+		height:auto;
+	}
+
+	.landscape{
+		width:auto;
+		height:100%;
+	}

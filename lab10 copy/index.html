@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Morris | Animation</title>
+
+<style>
+
+	body{
+		background:url("forest-background.jpg");
+		background-size:cover;
+
+	}
+
+	h1{
+		text-align:left;
+		color:black;
+	}
+
+	#dog{
+		position:absolute;
+		bottom:10px;
+		width:80%;
+	}
+
+	@keyframes dog{
+		0%{margin-left:0px;}
+		100%{margin-left:100%;}
+	}
+
+	img, .speechbubble, .speechbubble-1, .speechbubble-2{
+		animation-duration:5s;
+		animation-name:dog;
+	}
+
+	#speechbubble-container{position:relative;}
+
+	.speechbubble {
+		position:relative; 
+		background:#a5dbd3;
+		border-radius: .4em;
+		font-family:sans-serif;
+		width: 100px;
+		color:#fff;
+		padding:25px;
+		text-align:center;
+
+	}
+
+	.speechbubble-1{
+		background:#a5dbd3;
+		border-radius:50%;
+		width:20px;
+		height:20px;
+		border: 2px solid #6da8a8;
+		position:absolute;
+		top:80px;
+		left:170px;
+
+	}
+
+	.speechbubble-2{
+		background:#a5dbd3;
+		border-radius:50%;
+		width:10px;
+		height:10px;
+		border: 2px solid #6da8a8;
+		position:absolute;
+		top:100px;
+		left:200px;
+		
+	}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>A sunday afternoon in the forest...</h1>
+	<div id="dog">
+		<div id="speechbubble-container">
+			<div class="speechbubble"> Going for a walk is great for mental health!</div>
+			<div class="speechbubble-1"> </div>
+			<div class="speechbubble-2"> </div>
+
+		<img src="golden-retriever-walking.gif" alt="Golden retriever walking">
+		</div>
+	</div>
+
+</body>
+</html>

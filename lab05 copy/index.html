@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emily Morris | Form</title>
+
+<style>
+
+	body{
+		margin:0;
+		background-color: #65b0bb;
+	}
+
+	#header{
+		background-color: #e1aa46;
+		height: 150px;
+		line-height: 100px;
+		background-size: cover;
+		text-align: center;
+		font-size: 1.5em;
+		color: #56432d;
+		text-shadow: 5px 5px 10px #e1dac7;
+		border:1px solid #56432d;
+	}
+
+	#content {
+		background-color: #e1dac7;
+		width: 950px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+		border:1px solid #56432d;
+		}
+
+	.form-row{
+		margin:20px 0px;
+	}
+		
+	.main-label{
+		width:50%;
+		float:left;
+	}
+
+
+	#message{
+		width: 40%;
+	}
+
+	button{
+		padding:10px 20px;
+		background-color: #65b0bb;
+		color:white;
+	}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>Friend-Date Planning Form</h1>
+</div>
+
+<div id="content">
+<form action="confirmation.html">
+
+	<div class="form-row">
+	<label for="name" class="main-label">Name:</label>
+	<input id="name" type="text" placeholder="Enter your first name" required>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label">Check your availability for the next week:</label>
+	<label for="Monday"><input id="Monday" type="checkbox" name="Monday" value="Monday">Monday</label>
+	<label for="Tuesday"><input id="Tuesday" type="checkbox" name="Tuesday" value="Tuesday">Tuesday</label>
+	<label for="Wednesday"><input id="Wednesday" type="checkbox" name="Wednesday" value="alerts">Wednesday</label>
+	<label for="Thursday"><input id="Thursday" type="checkbox" name="Thursday" value="Thursday">Thursday</label>
+	<label for="Friday"><input id="Friday" type="checkbox" name="Friday" value="Friday">Friday</label>
+	<label for="Saturday"><input id="Saturday" type="checkbox" name="Saturday" value="Saturday">Saturday</label>
+	<label for="Sunday"><input id="Sunday" type="checkbox" name="Sunday" value="Sunday">Sunday</label>
+	</div>
+	
+	<div class="form-row">
+	<label class="main-label">Meal preference:</label>
+	<label for="restaurant" ><input id="restaurant" type="radio" name="dinner" value="yes">Restaurant</label>
+	<label for="cook"><input id="cook" type="radio" name="dinner" value="cook">Cook</label>
+	<label for="take-out"><input id="take-out" type="radio" name="dinner" value="take-out">Take-out</label>
+	<label for="no-pref"><input id="no-pref" type="radio" name="dinner" value="no-pref">No Preference</label>
+	</div>
+
+	<div class="form-row">
+	<label for="activity" class="main-label">Activity preference:</label>
+	<select id="activity">
+	<option value="Anything">I'm down for whatever.</option>
+	<option value="Movie">Let's watch a movie at home.</option>
+	<option value="Beach">Beach day! or maybe a bonfire</option>
+	<option value="Bar">Fun new bar!</option>
+	<option value="Museum">Museum for our minds</option>
+	<option value="Study">I'm drowning in work...study date?</option>
+	<option value="Out">Let's go OUT</option>
+	<option value="Other">Other -- suggest in box below</option>
+
+	</select>
+	</div>
+
+	<div class="form-row">
+	<label for="message" class="main-label">Questions/comments/concerns/suggestions:</label>
+	<textarea id="message" placeholder="Share your thoughts..."></textarea>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label">Accept terms and conditions of friendship:</label>
+	<label for="accept"><input id="accept" type="checkbox" name="accept" value="accept" required>I have read and accept the terms of our friendship.</label>
+
+	</div>
+
+	<div class="form-row">
+	<button id="submit-btn" type="submit">Send</button>
+	<button type="reset">Reset</button>
+	</div>
+
+</form>
+
+</div>
+</body>
+
+
+</html>
